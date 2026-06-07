@@ -18,20 +18,20 @@
   body{font-family:'Source Sans 3',sans-serif;background:var(--cream);color:var(--navy);overflow-x:hidden;}
 
   /* NAV */
-  nav{position:fixed;top:0;left:0;right:0;z-index:200;background:var(--white);border-bottom:3px solid var(--gold);display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:78px;box-shadow:0 2px 24px rgba(27,30,75,0.1);}
-  .nav-brand{display:flex;align-items:center;gap:14px;text-decoration:none;}
-  .logo-img{width:54px;height:54px;object-fit:contain;display:block;}
-  .brand-name{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--navy);letter-spacing:0.07em;display:block;}
-  .brand-sub{font-size:0.61rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);font-weight:700;display:block;margin-top:1px;}
-  .brand-tag{font-size:0.57rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--mid);display:block;margin-top:2px;}
-  .nav-links{display:flex;gap:30px;list-style:none;}
+  nav{position:fixed;top:0;left:0;right:0;z-index:200;background:var(--white);border-bottom:4px solid var(--gold);display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:150px;box-shadow:0 2px 24px rgba(27,30,75,0.1);}
+  .nav-brand{display:flex;align-items:center;gap:24px;text-decoration:none;}
+  .logo-img{width:106px;height:106px;object-fit:contain;display:block;}
+  .brand-name{font-family:'Playfair Display',serif;font-size:2.05rem;font-weight:700;color:var(--navy);letter-spacing:0.07em;display:block;line-height:1;}
+  .brand-sub{font-size:0.92rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);font-weight:700;display:block;margin-top:10px;}
+  .brand-tag{font-size:0.72rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--mid);display:block;margin-top:10px;}
+  .nav-links{display:none;gap:30px;list-style:none;}
   .nav-links a{font-size:0.77rem;letter-spacing:0.07em;text-transform:uppercase;text-decoration:none;color:var(--navy);font-weight:600;transition:color .2s;padding-bottom:3px;border-bottom:2px solid transparent;}
   .nav-links a:hover{color:var(--gold);border-bottom-color:var(--gold);}
-  .nav-cta{background:var(--navy);color:var(--white);padding:11px 28px;border:none;font-family:'Source Sans 3',sans-serif;font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:700;cursor:pointer;text-decoration:none;border-bottom:3px solid var(--gold);transition:background .2s;}
-  .nav-cta:hover{background:var(--purple);}
+  .nav-cta{background:linear-gradient(145deg,#F5D36D 0%,#D9A33A 42%,#B98524 100%);color:var(--navy);padding:11px 28px;border:none;font-family:'Source Sans 3',sans-serif;font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:800;cursor:pointer;text-decoration:none;border-bottom:3px solid #8B5E18;box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 10px 22px rgba(201,150,58,.18);text-shadow:0 1px 0 rgba(255,255,255,.35);transition:filter .2s,transform .15s,box-shadow .2s;}
+  .nav-cta:hover{filter:brightness(1.06);transform:translateY(-1px);box-shadow:inset 0 1px 0 rgba(255,255,255,.65),0 14px 28px rgba(201,150,58,.24);}
 
   /* HERO */
-  .hero{padding-top:78px;background:linear-gradient(140deg,var(--navy) 0%,var(--purple) 55%,#4B2FA0 100%);position:relative;overflow:hidden;min-height:90vh;display:flex;align-items:center;}
+  .hero{padding-top:150px;background:linear-gradient(140deg,var(--navy) 0%,var(--purple) 55%,#4B2FA0 100%);position:relative;overflow:hidden;min-height:90vh;display:flex;align-items:center;}
   .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 65% 60% at 82% 50%,rgba(201,150,58,.13) 0%,transparent 65%),radial-gradient(ellipse 35% 35% at 10% 85%,rgba(255,255,255,.04) 0%,transparent 55%);}
   .hcircle{position:absolute;border-radius:50%;border:1px solid rgba(201,150,58,.18);}
   .hc1{width:520px;height:520px;right:-110px;top:-110px;}
@@ -46,10 +46,10 @@
   .hero-body{font-size:1.04rem;line-height:1.8;color:rgba(255,255,255,.72);margin-bottom:18px;}
   .hero-tagline{font-family:'Playfair Display',serif;font-style:italic;font-size:1.08rem;color:var(--gold-light);margin-bottom:40px;padding-left:16px;border-left:3px solid var(--gold);}
   .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:44px;}
-  .btn-primary{background:var(--gold);color:var(--navy);padding:15px 36px;font-family:'Source Sans 3',sans-serif;font-size:.82rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;display:inline-block;transition:background .2s,transform .15s;border-bottom:3px solid rgba(0,0,0,.2);}
-  .btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);}
-  .btn-ghost{background:transparent;color:var(--white);padding:15px 30px;border:2px solid rgba(255,255,255,.35);font-family:'Source Sans 3',sans-serif;font-size:.82rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;display:inline-block;transition:border-color .2s,color .2s;}
-  .btn-ghost:hover{border-color:var(--gold-light);color:var(--gold-light);}
+  .btn-primary{background:linear-gradient(145deg,#F5D36D 0%,#D9A33A 44%,#B98524 100%);color:var(--navy);padding:15px 36px;font-family:'Source Sans 3',sans-serif;font-size:.82rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;display:inline-block;transition:filter .2s,transform .15s,box-shadow .2s;border-bottom:3px solid #8B5E18;box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 12px 26px rgba(201,150,58,.22);text-shadow:0 1px 0 rgba(255,255,255,.35);}
+  .btn-primary:hover{filter:brightness(1.06);transform:translateY(-2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.65),0 16px 32px rgba(201,150,58,.3);}
+  .btn-ghost{background:linear-gradient(145deg,rgba(245,211,109,.28) 0%,rgba(217,163,58,.16) 48%,rgba(185,133,36,.24) 100%);color:var(--gold-light);padding:15px 30px;border:2px solid rgba(232,184,75,.72);font-family:'Source Sans 3',sans-serif;font-size:.82rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;display:inline-block;box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 10px 24px rgba(20,12,48,.18);transition:border-color .2s,color .2s,background .2s,transform .15s,box-shadow .2s;}
+  .btn-ghost:hover{border-color:var(--gold-light);color:var(--white);background:linear-gradient(145deg,rgba(245,211,109,.38) 0%,rgba(217,163,58,.24) 48%,rgba(185,133,36,.3) 100%);transform:translateY(-2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 14px 28px rgba(20,12,48,.24);}
   .hero-serves{display:flex;border:1px solid rgba(201,150,58,.3);align-items:stretch;}
   .serve-chip{padding:12px 18px;min-height:76px;font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--white);text-align:center;line-height:1.45;flex:1;border-right:1px solid rgba(201,150,58,.3);background:rgba(255,255,255,.05);display:flex;align-items:center;justify-content:center;}
   .serve-chip:last-child{border-right:none;}
@@ -60,6 +60,11 @@
   .hero-wordmark-sub{font-family:'Playfair Display',serif;font-size:1.05rem;line-height:1.1;color:var(--gold-light);letter-spacing:.2em;text-transform:uppercase;margin-top:8px;}
   .hero-wordmark-llc{font-family:'Playfair Display',serif;font-size:1.15rem;line-height:1;color:rgba(255,255,255,.9);letter-spacing:.32em;margin-top:8px;}
   .hero-wordmark-motto{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.58);font-weight:700;margin-top:11px;}
+  .hero-services{margin:0 auto 22px;max-width:430px;border:1px solid rgba(201,150,58,.32);background:rgba(255,255,255,.06);padding:20px 22px;text-align:left;}
+  .hero-services-title{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-light);font-weight:700;margin-bottom:12px;text-align:center;}
+  .hero-services-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 16px;}
+  .hero-services-list li{font-size:.82rem;line-height:1.35;color:rgba(255,255,255,.78);font-weight:600;display:flex;align-items:center;gap:8px;}
+  .hero-services-list i{color:var(--gold-light);font-size:.78rem;}
   .hero-stats{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
   .hstat{background:rgba(255,255,255,.07);border:1px solid rgba(201,150,58,.3);padding:18px 14px;text-align:center;}
   .hstat-num{font-family:'Playfair Display',serif;font-size:1.7rem;color:var(--gold-light);display:block;line-height:1;font-weight:600;}
@@ -194,6 +199,7 @@
     .nav-links{display:none;}
     .hero-inner{grid-template-columns:1fr;padding:48px 24px;}
     .hero-right{display:none;}
+    .hero-services-list{grid-template-columns:1fr;}
     section{padding:64px 24px;}
     .services-grid,.partners-grid{grid-template-columns:1fr;}
     .who-grid{grid-template-columns:1fr;}
@@ -205,7 +211,41 @@
     .form-2col{grid-template-columns:1fr;}
     .cform-body,.cform-head{padding:22px 20px;}
   }
+
+  @media(max-width:640px){
+    nav{height:118px;padding:0 18px;gap:12px;}
+    .nav-brand{gap:14px;min-width:0;}
+    .logo-img{width:76px;height:76px;flex-shrink:0;}
+    .brand-name{font-size:1.45rem;letter-spacing:.055em;}
+    .brand-sub{font-size:.68rem;letter-spacing:.16em;margin-top:7px;}
+    .brand-tag{font-size:.57rem;letter-spacing:.12em;margin-top:7px;}
+    .nav-cta{display:none;}
+    .hero{padding-top:118px;min-height:auto;}
+    .hero-inner{padding:42px 24px 54px;}
+    .hero-badge{font-size:.62rem;letter-spacing:.14em;padding:6px 12px;line-height:1.45;}
+    .hero-program{font-size:.7rem;letter-spacing:.13em;}
+    h1{font-size:clamp(2.35rem,12vw,3.1rem);}
+    .hero-body{font-size:.98rem;line-height:1.7;}
+    .hero-tagline{font-size:1rem;margin-bottom:32px;}
+    .hero-actions{flex-direction:column;margin-bottom:38px;}
+    .btn-primary,.btn-ghost{width:100%;text-align:center;padding:15px 20px;}
+    .hero-serves{flex-direction:column;}
+    .serve-chip{min-height:58px;border-right:none;border-bottom:1px solid rgba(201,150,58,.3);}
+    .serve-chip:last-child{border-bottom:none;}
+    .steps{grid-template-columns:1fr;}
+    section{padding:56px 22px;}
+  }
 </style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W7MM5ZWMPS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W7MM5ZWMPS');
+</script>
 </head>
 <body>
 
@@ -219,6 +259,7 @@
     </div>
   </a>
   <ul class="nav-links">
+    <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#who">Who We Serve</a></li>
     <li><a href="#process">Process</a></li>
@@ -234,8 +275,8 @@
   <div class="hcircle hc3"></div>
   <div class="hero-inner">
     <div>
-      <div class="hero-badge">Metro Atlanta, Georgia — Immediate Openings</div>
-      <p class="hero-program">Independent Living &amp; Transitional Housing Program</p>
+      <div class="hero-badge">Metro Atlanta, Georgia — Accepting Referrals</div>
+      <p class="hero-program">Independent Living Housing Program</p>
       <h1>Safe. Stable.<br><span class="gold">Immediate</span> Housing.</h1>
       <p class="hero-body">Monarch Universal Care LLC provides safe, structured, and supportive housing for veterans, seniors, and individuals transitioning from hospitals, recovery programs, or unstable living environments.</p>
       <p class="hero-tagline">"A Safe Place to Call Home — Where stability, dignity, and independence come together."</p>
@@ -259,11 +300,22 @@
           <div class="hero-wordmark-motto">Compassion · Dignity · Service</div>
         </div>
       </div>
+      <div class="hero-services" aria-label="Services available">
+        <div class="hero-services-title">Services Available</div>
+        <ul class="hero-services-list">
+          <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Transitional Housing</span></li>
+          <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Senior Living Care</span></li>
+          <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Case Management</span></li>
+          <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Meal Programs</span></li>
+          <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Workforce Support</span></li>
+          <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>HUD-VASH Welcome</span></li>
+        </ul>
+      </div>
       <div class="hero-stats">
         <div class="hstat"><span class="hstat-num">24–48h</span><span class="hstat-label">Placement Window</span></div>
         <div class="hstat"><span class="hstat-num">HUD</span><span class="hstat-label">Vouchers Accepted</span></div>
         <div class="hstat"><span class="hstat-num">24/7</span><span class="hstat-label">Resident Support</span></div>
-        <div class="hstat"><span class="hstat-num">100%</span><span class="hstat-label">Move-In Ready</span></div>
+        <div class="hstat"><span class="hstat-num">100%</span><span class="hstat-label">Referral Focused</span></div>
       </div>
     </div>
   </div>
@@ -284,7 +336,7 @@
         <div class="scard-icon"><i class="fa-solid fa-house-chimney" aria-hidden="true"></i></div>
         <div class="scard-title">Fully Furnished Housing</div>
         <p class="scard-desc">Clean, comfortable, move-in ready homes across Metro Atlanta. Shared and private options available.</p>
-        <ul class="scard-list"><li>Utilities &amp; Wi-Fi included</li><li>Structured living environment</li><li>Same-day or next-day placement</li></ul>
+        <ul class="scard-list"><li>Utilities &amp; Wi-Fi included</li><li>Structured living environment</li><li>Placement coordinated upon approval</li></ul>
       </div>
       <div class="scard fade-up">
         <div class="scard-icon"><i class="fa-solid fa-handshake-angle" aria-hidden="true"></i></div>
@@ -436,20 +488,20 @@
   <div class="container">
     <div class="sec-head fade-up">
       <div class="eyebrow">Contact &amp; Referrals</div>
-      <h2>Immediate openings — <em>call today</em></h2>
+      <h2>Now accepting referrals &amp; inquiries</h2>
       <p class="sec-sub">Whether you're a case manager, veteran, individual in recovery, senior, or family member — we're ready to help now.</p>
     </div>
     <div class="contact-grid">
       <div class="fade-up">
         <div class="cinfo-top">
           <div class="cinfo-top-title">Contact for Referrals</div>
-          <div class="cinfo-top-sub">Immediate openings available — same-day or next-day placement</div>
+          <div class="cinfo-top-sub">Now accepting referrals &amp; placement inquiries — placement coordinated upon approval</div>
           <a href="tel:+14703449373" class="cinfo-phone"><i class="fa-solid fa-phone" aria-hidden="true"></i> (470) 344-9373</a>
         </div>
         <div class="cinfo-items">
           <div class="cinfo-item">
             <div class="cinfo-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
-            <div><div class="cinfo-label">Email</div><div class="cinfo-val"><a href="mailto:info@monarchuniversalcare.com">info@monarchuniversalcare.com</a></div></div>
+            <div><div class="cinfo-label">Email</div><div class="cinfo-val"><a href="mailto:monarchuniversalcare@gmail.com">monarchuniversalcare@gmail.com</a></div></div>
           </div>
           <div class="cinfo-item">
             <div class="cinfo-icon"><i class="fa-solid fa-globe" aria-hidden="true"></i></div>
@@ -461,7 +513,7 @@
           </div>
           <div class="cinfo-item">
             <div class="cinfo-icon"><i class="fa-solid fa-clock" aria-hidden="true"></i></div>
-            <div><div class="cinfo-label">Availability</div><div class="cinfo-val">Same-day or next-day placement available<br>Urgent inquiries responded to promptly</div></div>
+            <div><div class="cinfo-label">Availability</div><div class="cinfo-val">Placement coordinated upon approval<br>Urgent inquiries responded to promptly</div></div>
           </div>
           <div class="cinfo-item">
             <div class="cinfo-icon"><i class="fa-solid fa-landmark" aria-hidden="true"></i></div>
@@ -541,7 +593,7 @@
       <div class="footer-col-title">Contact</div>
       <div class="footer-contact">
         <div class="fc-item"><span class="fc-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></span><span class="fc-text"><a href="tel:+14703449373">(470) 344-9373</a></span></div>
-        <div class="fc-item"><span class="fc-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span><span class="fc-text"><a href="mailto:info@monarchuniversalcare.com">info@monarchuniversalcare.com</a></span></div>
+        <div class="fc-item"><span class="fc-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span><span class="fc-text"><a href="mailto:monarchuniversalcare@gmail.com">monarchuniversalcare@gmail.com</a></span></div>
         <div class="fc-item"><span class="fc-icon"><i class="fa-solid fa-globe" aria-hidden="true"></i></span><span class="fc-text"><a href="https://www.monarchuniversalcare.com">www.monarchuniversalcare.com</a></span></div>
         <div class="fc-item"><span class="fc-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span><span class="fc-text">Smyrna · Marietta · Atlanta<br>Cobb County, Georgia</span></div>
       </div>
